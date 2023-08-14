@@ -11,20 +11,19 @@
             Cenário: preencher todos os dados
             Quando eu iniciar meu cadastro
             E preencher todos os campos obrigatórios
-            Então devi concluir meu cadastro
+            Então devo concluir meu cadastro
 
             Cenário: Não permitir e-mail com formato inválido
-            Quando inserir o email "jhonsons@jhonsons.com" no formato inválido
+            Quando inserir o email "jhonsons@jhonsons.com"
             E senha "jhonson"
-            E tentar entrar no sistema
-            Então deve  exibir uma mensagem de alerta: "Erro"
+            Então deve  exibir uma mensagem de alerta: "Email inexistente"
 
             Cenário: Não conseguir cadastrar sem preencher os campos
-            Quando eu ir em cadastrar
-            E não preencher os campos
-            E tentar criar cadastro
-            Então deve  exibir uma mensagem de alerta: "Preencha os campos"
+            Quando eu tentar fazer o cadastro
+            E não preencher os campos e tentar criar cadastro
+            Então deve exibir uma mensagem de alerta: "Preencha os campos"
 
             Exemplo:
-            | Usuário               | senha   | mensagem |
-            | jhonsons@jhonsons.com | jhonson | Erro     |
+            | Usuário               | senha   | mensagem             |
+            | jhonsons@jhonsons.com | jhonson | "Email inexistente"  |
+            | -                     | -       | "Preencha os campos" |
