@@ -11,16 +11,15 @@ Dado que eu escolha o produto de tamnaho,gosto e quantidade, e insira no carrinh
 
 Cenário: Selecionando cor,tamnho e quantidade
 Quando selecionar cor 
-E tamanho
-E quantidade 
+E tamanho e quantidade
 Então deverá conseguir inserir no carrinho
 
 Cenário: Permitir no máximo 10 produtos por venda
 Quando eu inserir 10 produtos 
-E tentar inserir outro 
+E tentar acrescentar mais
 Então não consiguira selecionar mais
 
 Cenário: Clicar em limpar e resetar
 Quando selecionar o botão limpar
 E limpar a lista selecionada
-Então deve voltar desde ao estado original
+Então deve voltar ao estado original da lista
