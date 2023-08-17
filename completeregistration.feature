@@ -23,6 +23,11 @@
             E não preencher os campos e tentar criar cadastro
             Então deve exibir uma mensagem de alerta: "Preencha os campos"
 
+            Cenário: Cadastrando na plataforma
+            Quando eu digitar o <usuario>
+            E a <senha>
+            Então deve exibir a <mensagem> de email inexistente ou preencha os campos
+
             Exemplo:
             | Usuário               | senha   | mensagem             |
             | jhonsons@jhonsons.com | jhonson | "Email inexistente"  |
