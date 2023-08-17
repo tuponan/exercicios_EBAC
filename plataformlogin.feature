@@ -18,6 +18,11 @@
             E inserir a senha: "ebac321"
             Então deve exibir uma mensagem de alerta: "usuário ou senha inválidos"
 
+            Cenário: Autenticar multiplos usuários
+            Quando eu digitar o <usuario>
+            E a <senha>
+            Então deve exibir a <mensagem> de válido ou inválido
+
             Exemplos:
             | usuario           | senha   | mensagem                     |
             | ebacker@ti.com.br | ebac123 | "Bem vindo"                  |
