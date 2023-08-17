@@ -20,13 +20,13 @@
 
             Cenário: usuário com senha inválida
             Quando eu digitar o usuário "joao@ebac.com.br"
-            E a senha "aipega@123"
+            E a senha "senha@123"
             Então deve exibir uma mensagem de alerta: "Usuário ou senho inválidos"
 
             Cenário: Autenticar multiplos usuários
             Quando eu digitar o <usuario>
             E a <senha>
-            Então de exibir a <mensagem> de sucesso
+            Então deve exibir a <mensagem> de sucesso
 
             Exemplos:
             | usuario           | senha      | mensagem       |
